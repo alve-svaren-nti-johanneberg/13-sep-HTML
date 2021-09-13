@@ -1,0 +1,27 @@
+section {
+    border: 1px solid red;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+p {
+    margin: 0;
+    flex: 1;
+}
+
+section > p:nth-child(1) {
+    background: pink;
+}
+
+section > p:nth-child(2) {
+    background: blue;
+}
+section > p:nth-child(3) {
+    background: green;
+}
+section > p:nth-child(4) {
+    background: yellow;
+}
