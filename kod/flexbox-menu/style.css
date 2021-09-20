@@ -1,0 +1,30 @@
+:root {
+    font-style: 16px;
+    --mainColor: #eee;
+    --linkColor: #999;
+}
+
+nav {
+    background: var(--mainColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+nav a:hover {
+    color: #222;
+}
+
+aside.logo {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
