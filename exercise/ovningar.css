@@ -4,6 +4,8 @@
 
 body {
     background: #eee;
+    perspective: 1000px;
+    perspective-origin: bottom left;
 }
 
 .card {
@@ -145,4 +147,9 @@ figcaption p:last-child {
     margin: 1em;
     box-shadow: 0 0 25px #0005;
     font-family: monospace;
+    transition: all ease-in-out .5s;
+}
+
+body:hover .playing-card {
+    transform: rotateX(180deg);
 }
