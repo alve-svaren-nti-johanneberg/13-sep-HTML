@@ -1,0 +1,148 @@
+:root {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+.card {
+    font-size: 1.2em;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    max-width: 12em;
+    min-height: 16em;
+    box-shadow: 0 0 1em #0005;
+    border-radius: .33em;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pager {
+    display: flex;
+}
+
+.pager a {
+    background-color: #0004;
+    border-radius: 50%;
+    width: .4em;
+    height: .4em;
+    margin: .4em;
+    display: inline-block;
+    position: relative;
+    transition: .2s opacity;
+}
+
+.pager a:before {
+    position: absolute;
+    inset: -.4em;
+    content: "";
+}
+
+.pager a.active {
+    background-color: #000;
+}
+
+.pager a:hover {
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.card blockquote {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.card figcaption {
+    color: gray;
+}
+
+.close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: initial;
+    line-height: .5;
+    padding: 0;
+}
+
+.button, button {
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    font-size: .9em;
+    padding: .5em 1.5em;
+    text-decoration: none;
+}
+
+.red {
+    color: red;
+}
+
+.flipped {
+    transform: rotate(180deg);
+    display: inline-block;
+    align-self: flex-end;
+}
+
+figcaption p {
+    margin: .2em;
+}
+
+figcaption p:first-child {
+    color: black;
+}
+
+figcaption p:last-child {
+    font-size: smaller;
+}
+
+.large {
+    font-size: 2em;
+    align-self: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.playing-card {
+    line-height: 1;
+    align-items: flex-start;
+    padding: .4em;
+    font-size: 4em;
+    border-radius: .2em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 5em;
+    aspect-ratio: 9 / 16;
+    margin: 1em;
+    box-shadow: 0 0 25px #0005;
+    font-family: monospace;
+}
